@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgba(5, 5, 106, 0.659);
+        }
+        
+        .left {
+            font-size: 2rem;
+            color: white;
+            padding-right: 60%;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 10px 23px;
+        }
+        
+        nav ul li a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            color: rgba(0, 0, 0, 0.995);
+        }
+        
+        section {
+            justify-content: space-around;
+            display: flex;
+            padding: 30px 50px;
+        }
+        
+        .card {
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 3px 7px;
+            color: rgb(255, 255, 255);
+        }
+        
+        .card h2 {
+            padding: 5px;
+        }
+        
+        .card p {
+            margin: 10px;
+        }
+        
+        .btn {
+            padding: 5px;
+            margin: 5px;
+        }
+        
+        .main {
+            padding: 70px;
+        }
+        
+        .src {
+            height: 200px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            background-color: rgba(37, 37, 41, 0.719);
+            height: 233px;
+        }
+        
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-between;
+        }
+        
+        .footer p {
+            width: 123px;
+        }
+        
+        .footer li {
+            list-style: none;
+            margin: 15px;
+        }
+        
+        hr {
+            margin: 40px;
+        }
+        
+        .footer h2 {
+            padding: 10px;
+        }
+        
+        .footer h3 {
+            padding: 10px;
+        }
+        
+        .footer h4 {
+            padding: 150x;
+        }
+        
+        .content img {
+            height: 500px;
+            width: 100%;
+        }
+        
+        .rate {
+            float: left;
+            height: 46px;
+            padding: 0 10px;
+        }
+        
+        .rate:not(:checked)>input {
+            position: absolute;
+            top: -9999px;
+        }
+        
+        .rate:not(:checked)>label {
+            float: right;
+            width: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ccc;
+        }
+        
+        .rate:not(:checked)>label:before {
+            content: '★ ';
+        }
+        
+        .rate>input:checked~label {
+            color: #ffc700;
+        }
+        
+        .rate:not(:checked)>label:hover,
+        .rate:not(:checked)>label:hover~label {
+            color: #deb217;
+        }
+        
+        .rate>input:checked+label:hover,
+        .rate>input:checked+label:hover~label,
+        .rate>input:checked~label:hover,
+        .rate>input:checked~label:hover~label,
+        .rate>label:hover~input:checked~label {
+            color: #c59b08;
+        }
+        
+        .navigation {
+            background-color: black;
+            padding: 10px;
+        }
+        
+        .navigation ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navigation ul li {
+            list-style: none;
+            padding: 10px;
+        }
+        
+        .navigation ul li a {
+            text-decoration: none;
+            font-size: 1.0rem;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>:
+            <div class="left">
+                <h3>Learn IT</h3>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="raj.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="">Other</a></li>
+                    <li><a href="">Contect me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="navigation">
+            <ul>
+                <li><a href="">Html</a></li>
+                <li><a href="">Advance web programing</a></li>
+                <li><a href="">software project managment</a></li>
+                <li><a href="">Python</a></li>
+                <li><a href="">Java</a></li>
+                <li><a href="">Oops</a></li>
+                <li><a href="">linux</a></li>
+                <li><a href="">My sql</a></li>
+                <li><a href="">Data stuchear</a></li>
+                <li><a href="">Embbed system</a></li>
+                <li><a href="">Artificial Intalligence</a></li>
+                <li><a href="">Internet of think</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <div class="card" style="width: 18rem;">
+            <img src="nature.jpg" class="src" alt="...">
+            <div class="card-body">
+                <h2 class="card-title">WAb Devloper</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores repudiandae distinctio sint praesentium illo explicabo quibusdam!</p>
+
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="nature.jpg" class="src" alt="...">
+            <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis earum unde ipsa corporis cumque a qui. Aliquid veritatis quasi doloremque.</p>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="nature.jpg" class="src" alt="...">
+            <div class="card-body">
+                <h2 class="card-title">Card title</h2>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis earum unde ipsa corporis cumque a qui. Aliquid veritatis quasi doloremque.</p>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <contaener class="content">
+        <div class="img">
+            <img src="nature.jpg" alt="" class="content img">
+        </div>
+    </contaener>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h1>Learing IT</h1>
+                <p>Thise wabsite is a fully learn the (IT) corces c ,c++, python,java,linux,and different type of corces and full provide the notes PDF</p>
+            </div>
+            <div class="Second">
+                <h2>Wab devloper</h2>
+                <li>About</li>
+                <li>Search</li>
+                <li>Decription</li>
+                <li>Blog</li>
+            </div>
+            <div class="theard">
+                <h3>Data santiesct</h3>
+                <li>About</li>
+                <li>Search</li>
+                <li>Decription</li>
+                <li>Blog</li>
+            </div>
+            <div class="theard">
+                <h4>Python programer</h4>
+                <li>About</li>
+                <li>Search</li>
+                <li>Decription</li>
+                <li>Blog</li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
