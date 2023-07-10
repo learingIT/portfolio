@@ -16,28 +16,35 @@
         }
         
         body {
-            height: 50vh;
+            height: 70vh;
             width: 100%;
             background: url("wab.png")no-repeat center center/cover;
             background-color: rgba(2, 5, 71, 0.859);
         }
         
-        .left {
-            font-size: 2rem;
+        .left li {
+            font-size: 3.0rem;
             color: white;
-            padding-right: 40%;
+            padding: 10px;
+            list-style: none;
+        }
+        
+        .right {
+            margin: auto;
+            padding-top: 20px;
         }
         
         nav {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding-top: 20px;
+            justify-content: left;
+            padding: 20px;
         }
         
         nav ul {
             display: flex;
             justify-content: center;
+            padding: 10px;
         }
         
         nav ul li {
@@ -65,9 +72,8 @@
         
         .firstsection {
             display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 100px;
+            margin: 80px;
+            padding-bottom: 50px;
         }
         
         .firstsection>div {
@@ -88,8 +94,7 @@
             width: 70%;
             margin: 50px 0;
         }
-        
-        .secondsection {
+        /* .secondsection {
             justify-content: center;
         }
         
@@ -138,7 +143,7 @@
             margin-top: -7px;
             color: white;
         }
-        /* .lorem {
+         .lorem {
             font-size: 10px;
             width: 150px;
             position: relative;
@@ -176,6 +181,141 @@
         .footer h4 {
             padding: 150x;
         }
+        /*about*/
+        
+        .about {
+            width: 100%;
+            padding: 100px 0px;
+        }
+        
+        .about img {
+            height: auto;
+            width: 430px;
+        }
+        
+        .about-text {
+            width: 550px;
+        }
+        
+        .main {
+            width: 1130px;
+            max-width: 95%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .about-text h2 {
+            color: white;
+            font-size: 25px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        
+        .about-text h5 {
+            color: white;
+        }
+        
+        span {
+            color: red;
+            text-transform: capitalize;
+        }
+        
+        .about-text p {
+            color: white;
+        }
+        
+        .yas {
+            background-color: #c91f1f;
+        }
+        
+        .ns {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .pra {
+            text-align: center;
+            color: aqua;
+        }
+        
+        .secondabout {
+            justify-content: flex-start;
+        }
+        
+        .secondabout .about-text {
+            justify-content: flex-start;
+        }
+        /*main*/
+        
+        .main {
+            padding: 70px;
+        }
+        
+        .src {
+            height: 200px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .card-body {
+            margin: 10px;
+        }
+        
+        .card-body h2 {
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .navigation {
+            background-color: black;
+            padding: 10px;
+        }
+        
+        .navigation ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navigation ul li {
+            list-style: none;
+            padding: 10px;
+        }
+        
+        .navigation ul li a {
+            text-decoration: none;
+            font-size: 1.0rem;
+            padding: 10px;
+            color: white;
+        }
+        
+        .text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card {
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: white;
+        }
     </style>
 </head>
 
@@ -184,11 +324,10 @@
 
         <nav>:
             <div class="left">
-                <h3>Learn IT</h3>
+                <li><a herf="about.html">Learn IT</a></li>
             </div>
             <div class="right">
                 <ul>
-
                     <li><a href="">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="">Other</a></li>
@@ -212,30 +351,64 @@
 
             </div>
         </section>
+        <section class="main">
+            <div class="card" style="width: 18rem;">
+                <img src="nature.jpg" class="src" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">WAb Devloper</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores repudiandae distinctio sint praesentium illo explicabo quibusdam!</p>
 
-        <section class="secondsection">
-            <h1></h1>
-            <div class="box">
-                <div class="verictal">
-                    <img src="html.png" alt="" class="imagepng">
-                    <li> htme,css,java script</li>
 
-                </div>
-                <div class="verictal">
-                    <img src="python.png" alt="" class="imagepng">
-                    <li> python dewloper
-                    </li>
-                </div>
-                <div class="verictal">
-                    <img src="java.png" alt="" class="imagepng">
-                    <li>Java program</li>
-                </div>
-                <div class="verictal">
-                    <img src="linux.png" alt="" class="imagepng1">
-                    <li> linux master</li>
                 </div>
             </div>
+            <div class="card" style="width: 18rem;">
+                <img src="nature.jpg" class="src" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">python programer</h2>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis earum unde ipsa corporis cumque a qui. Aliquid veritatis quasi doloremque.</p>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="nature.jpg" class="src" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">java</h2>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis earum unde ipsa corporis cumque a qui. Aliquid veritatis quasi doloremque.</p>
+
+                </div>
+            </div>
+
         </section>
+        <section class="main">
+            <div class="card" style="width: 18rem;">
+                <img src="nature.jpg" class="src" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">My sql</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores repudiandae distinctio sint praesentium illo explicabo quibusdam!</p>
+
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="nature.jpg" class="src" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Softwear managment</h2>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis earum unde ipsa corporis cumque a qui. Aliquid veritatis quasi doloremque.</p>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="nature.jpg" class="src" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">Artificial intaligans</h2>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis earum unde ipsa corporis cumque a qui. Aliquid veritatis quasi doloremque.</p>
+
+                </div>
+            </div>
+
+        </section>
+
+
     </main>
     <footer>
         <div class="footer">
